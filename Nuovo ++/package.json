@@ -1,0 +1,19 @@
+{
+  "name": "colpa-mia-loyalty-netlify",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Static publish; functions bundled by Netlify'",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "stripe": "^16.0.0",
+    "@netlify/functions": "^2.6.0",
+    "@netlify/blobs": "^6.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
