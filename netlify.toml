@@ -1,0 +1,15 @@
+
+[build]
+  publish = "public"
+  command = "echo build-skip"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["stripe","@netlify/blobs","@netlify/functions"]
+
+[[plugins]]
+  package = "@netlify/plugin-scheduled"
+  [plugins.inputs]
+    schedule = "0 * * * *"
+    name = "loyalty-cron"
